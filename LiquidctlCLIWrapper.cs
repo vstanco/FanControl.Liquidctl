@@ -46,7 +46,7 @@ namespace FanControl.Liquidctl
 
             if (process.ExitCode != 0)
             {
-                throw new Exception($"liquidctl returned non-zero exit code {process.ExitCode}. Last stderr output:\n{process.StandardError.ReadToEnd()}");
+                //throw new Exception($"liquidctl returned non-zero exit code {process.ExitCode}. Last stderr output:\n{process.StandardError.ReadToEnd()}");
             }
 
             return process;
